@@ -23,7 +23,8 @@ def train_dataloader(self):
         ...
 ```
 따라서 데이터 파일의 최종경로는 다음과 같이 설정되어 있다. 
-%cd /content/drive/MyDrive/kobert/models/Chatbot_data_ChatbotData.csv
+
+%cd /content/drive/MyDrive/kobert/models/Chatbot_data/ChatbotData.csv
 
 ### KoGPT2 챗봇 학습 데이터
 1. [챗봇 트레이닝용 문답 페어](https://github.com/songys/Chatbot_data)
