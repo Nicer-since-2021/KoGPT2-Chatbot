@@ -16,15 +16,11 @@
 ```
 [emotion_classifications_chatbot_pytorch_kobert+kogpt2.ipynb](https://github.com/Nicer-since-2021/multiclass-emotion-classification-using-KoBERT/blob/main/S00MIN-KIM/emotion_classifications_chatbot_pytorch_kobert%2Bkogpt2.ipynb)에서 위 코드를 통해 폴더 이동을 한 후 파인튜닝을 진행한다. 
 
-그리고 이 [KoGPT2-Chatbot레포의 train_torch](https://github.com/Nicer-since-2021/KoGPT2-Chatbot/blob/main/train_torch.py)의 소스코드를 통해 데이터를 불러와 학습시킨다. 
+그리고 이 [KoGPT2-Chatbot레포의 train_torch](https://github.com/Nicer-since-2021/KoGPT2-Chatbot/blob/main/train_torch.py) 소스코드를 통해 데이터를 불러와 학습시킨다. 
 ```Python
 def train_dataloader(self):
         data = pd.read_csv('Chatbot_data/ChatbotData.csv', encoding='cp949')
-        self.train_set = CharDataset(data, max_len=self.hparams.max_len)
-        train_dataloader = DataLoader(
-            self.train_set, batch_size=self.hparams.batch_size, num_workers=2,
-            shuffle=True, collate_fn=self._collate_fn)
-        return train_dataloader
+        ...
 ```
 따라서 데이터 파일의 최종경로는 다음과 같이 설정되어 있다. 
 %cd /content/drive/MyDrive/kobert/models/Chatbot_data_ChatbotData.csv
