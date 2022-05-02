@@ -37,6 +37,6 @@ def train_dataloader(self):
   ※ (<챗봇의 응답> | <사용자의 발화>, <감정 라벨>) 형식이 되도록 라벨링 작업이 필요하다.
 <img src="https://user-images.githubusercontent.com/68471619/145357192-bf3639a2-a33d-4db0-93c7-3efc9780db4f.png" width="800" height="300"/>
 
-**데이터 파일의 경우 제공받은 데이터를 가공하여 사용했기 때문에 재업로드시 문제가 생길 수 있음을 염려하여 드라이브를 통해 학습했다.**
+**데이터 파일의 경우 제공받은 데이터를 가공하여 사용했기 때문에 재업로드시 문제가 생길 수 있음을 염려하여 드라이브를 통해 학습했다. 팀 드라이브에 파일 업로드 완료**
 
 이 챗봇 데이터와 코드가 어떻게 활용되어 어떤 결과를 도출하는지 등의 기타 관련 정보는 [다음](https://github.com/Nicer-since-2021/multiclass-emotion-classification-using-KoBERT/tree/main/S00MIN-KIM)을 참고.
